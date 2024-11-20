@@ -1,0 +1,49 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.display-container {
+  text-align: center;
+  margin-bottom: 10rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem solid #ddd;
+  border-radius: 0.8rem;
+}
+
+.display-container img {
+  min-width: 15rem;
+  /* min-height: 20rem; */
+}
+
+.display-container .alt-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 30rem;
+  height: auto;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: 0.2rem solid transparent;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.03);
+  border: 0.2rem solid black;
+}
